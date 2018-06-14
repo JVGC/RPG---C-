@@ -76,6 +76,7 @@ void Character::set_dexterity(int add){
 void Character::get_info(){
 	cout << "###########################" << endl;
 	cout << "#~~~~~~~~~~Ficha~~~~~~~~~~#" << endl;
+	cout << "###########################" << endl;
 	cout << "# Name = " << name << endl;
 	cout << "# HP = " << HP << endl;
         cout <<	"# Mana =  " << Mana << endl;
@@ -105,6 +106,7 @@ Knight::Knight(string name) : Character(name){
 void Knight::get_info(){
 	cout << "###########################" << endl;
 	cout << "#~~~~~~~Ficha~Knight~~~~~~#" << endl;
+	cout << "###########################" << endl;
 	cout << "# Name = " << get_name() << endl;
 	cout << "# HP = " << get_HP() << endl;
         cout <<	"# Mana =  " << get_Mana() << endl;
@@ -133,6 +135,7 @@ Wizard::Wizard(string name) : Character(name){
 void Wizard::get_info(){
 	cout << "###########################" << endl;
 	cout << "#~~~~~~Ficha~Wizard~~~~~~~#" << endl;
+	cout << "###########################" << endl;
 	cout << "# Name = " << get_name() << endl;
 	cout << "# HP = " << get_HP() << endl;
         cout <<	"# Mana =  " << get_Mana() << endl;
