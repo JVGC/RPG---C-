@@ -3,6 +3,9 @@
 
 using namespace std;
 
+///////////////////////////////////////////////////////
+//                Classe Character    		     //	
+///////////////////////////////////////////////////////
 class Character{
 	private:
 		string name;
@@ -40,9 +43,6 @@ class Character{
 		int get_Dexterity() { return Dexterity; } 
 		//Jogabilidade:
 };
-///////////////////////////////////////////////////////
-//                Classe Characteri    		    //	
-///////////////////////////////////////////////////////
 Character::Character(){
 	this->name = ("Personagem");
 	this->HP = 100;
