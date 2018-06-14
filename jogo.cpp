@@ -150,14 +150,18 @@ int main(){
 	///////////////////////////////////////////////////////////
 	//	Setando caracteristicas do personagem 		//
 	///////////////////////////////////////////////////////////
+	cout << "================================================" << endl;
 	cout << "Entre com o nome do seu personagem: ";
 	cin >> nome;
+	cout << "================================================" << endl;
 
+	cout << "================================================" << endl;
 	cout << "Seu personagem será um Knight ou Wizard? " << endl; 
 	cout << "Digite 1 para Knight." << endl;
 	cout << "Digite 2 para Wizard." << endl; 
 	cout << "Entre com a opção: ";  
 	cin >> opcao;
+	cout << "================================================" << endl;
 
 	while(opcao != 1 && opcao != 2){
 		cout << "Opcao invalida, entre novamente com um dado válido: " << endl;
