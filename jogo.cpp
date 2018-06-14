@@ -146,6 +146,9 @@ void Wizard::get_info(){
 	cout << "###########################" << endl;
 }
 
+//////////////////
+//	MAIN	//
+//////////////////
 int main(){
 	string nome;
 	int opcao;
