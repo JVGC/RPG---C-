@@ -15,7 +15,9 @@ public:
 	Potion(string name, double price, int rest_Pts);
 	//~Potion();
 
+	int get_restPts(){ return restore_pts;}
+
 	void get_info();
-	void use();
+	int use();
 };
 #endif

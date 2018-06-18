@@ -9,6 +9,8 @@ class Item
 private:
 	string name;
 	double price;
+	string Descripition;
+	int level; // LEVEL NECESSÁRIO PARA SE USAR O ITEM
 
 public:
 	//Item();
@@ -22,9 +24,9 @@ public:
 
 	virtual void get_info(){};
 	
-	// virtual void use(){}
-	// virtual int get_defense_Pts() {}
-	// virtual int get_attack_Pts(){}
+	virtual int use(){}
+	virtual int get_defense_Pts() {}
+	virtual int get_attack_Pts(){}
 
 };
 

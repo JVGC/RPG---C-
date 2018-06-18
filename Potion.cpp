@@ -2,7 +2,6 @@
 #include <iostream>
 
 
-
 void Potion::get_info(){
 	cout << get_name() <<" Potion" << endl;
 	cout << "Price: " << get_price() << endl;
@@ -12,4 +11,8 @@ void Potion::get_info(){
 
 Potion::Potion(string name, double price, int rest_Pts) : Item(name,price){
 	restore_pts = rest_Pts;
+}
+
+int Potion::use(){
+	return restore_pts;
 }

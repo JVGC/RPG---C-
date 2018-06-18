@@ -4,22 +4,12 @@
 
 #include "Knight.hpp"
 #include "Wizard.hpp"
-#include "Potion.hpp"
+#include "ManaPotion.hpp"
+#include "HealthPotion.hpp"
+#include "Weapon.hpp"
 
 
 using namespace std;
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////
-//                Classe Inventory		    //	
-///////////////////////////////////////////////////////
-
-
 
 //////////////////
 //	MAIN	//
@@ -27,6 +17,8 @@ using namespace std;
 int main(){
 	string nome;
 	int opcao;
+
+
 	
 	///////////////////////////////////////////////////////////
 	//	Setando caracteristicas do personagem 		//
@@ -50,12 +42,19 @@ int main(){
 	}
 
 	if(opcao == 1){
-		Potion p("mana", 50, 100);
+		ManaPotion MP("mana", 50, 500);
+		HealthPotion HP("health", 60, 70);
+		Axe A("Weapon", 699.90, true);
+		A.setBonus(50, -10, 0);
 		Knight ch(nome);
 		ch.set_strenght(35);
 		ch.set_speed(25);
 		ch.set_dexterity(20);
-		ch.get_Inventory()->insert_item(&p);
+		ch.get_Inventory()->insert_item(&MP);
+		ch.get_Inventory()->insert_item(&HP);
+		ch.get_Inventory()->insert_item(&A);
+		ch.addHP(&HP);
+		ch.addMP(&MP);
 		ch.get_info();
 	}
 	else if(opcao == 2){

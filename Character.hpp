@@ -29,18 +29,12 @@ class Character{
 		void set_strenght(int add);
 		void set_speed(int add);
 		void set_dexterity(int add);
-		void addHP(int some){
-			if((HP += some) > 100)
-				HP = 100;
-			else
-				HP += some;
-		};
-		void addMana(int some){
-			if((Mana += some) > 100)
-				Mana = 100;
-			else
-				Mana += some;	
-		};
+		void addHP(Item* p){
+			HP += p->use();
+		}
+		void addMP(Item* p){
+			Mana += p->use();	
+		}
 		string get_name() { return name; } 
 		int get_HP() { return HP; } 
 		int get_Mana() { return Mana; } 
